@@ -17,9 +17,50 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+  url("../fonts/MullerRegular.woff2") format("woff2"),
+  url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Light"),
+  url("../fonts/MullerLight.woff2") format("woff2"),
+  url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium"),
+  url("../fonts/MullerMedium.woff2") format("woff2"),
+  url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Bold"),
+  url("../fonts/MullerBold.woff2") format("woff2"),
+  url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
-  font-family: "font", sans-serif;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
   background-color: #E5E5E5;
 }
 
@@ -50,11 +91,6 @@ body {
   padding: 35px 0;
 }
 
-.section-title {
-  margin: 0;
-  margin-bottom: 20px;
-  padding-left: 40px;
-}
 
 .third-title {
   margin: 0;
@@ -62,6 +98,26 @@ body {
 
 .paragraph {
   margin: 0;
+}
+
+.links {
+  font-size: 0;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+line-height: 40px;
+color: #333333;
+}
+
+.general-descr {
+  font-size: 16px;
+line-height: 200%;
+color: #000000;
 }
 
 /* header */
@@ -83,14 +139,32 @@ body {
   margin-right: auto;
 }
 
+.header-contacts {
+  font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+color: #666666;
+font-style: normal;
+}
+
 .header-link {
   margin-left: auto;
+  padding-left: 28px;
+  font-weight: 500;
+  font-size: 16px;
+line-height: 16px;
+color: #CC9933;
+  background-image: url("../img/header-link-icon.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 /* header-bottom */
 
 .header-bottom {
-  padding: 27px 45px;
+  padding: 14px 45px;
+  background-color: #FFFFFF;;
+  border-radius: 15px;
 }
 
 .header-nav {
@@ -103,6 +177,10 @@ body {
 
 .header-item {
   max-width: 115px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  
 }
 
 .header-item:not(:last-child) {
@@ -110,7 +188,7 @@ body {
 }
 
 .header-buttons {
-  margin-left: auto;
+margin-left: auto;
 }
 
 .header-button:not(:last-child) {
@@ -118,7 +196,13 @@ body {
 }
 
 .header-button {
-  max-width: 137px;
+  max-width: 179px;
+  padding: 12px 20px;
+  font-size: 16px;
+line-height: 16px;
+color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 15px;
 }
 
 /* main */
@@ -129,6 +213,7 @@ body {
   margin: 0;
   font-size: 0;
 }
+
 
 .section-special-title {
   margin: 0;
@@ -151,14 +236,44 @@ body {
   justify-content: flex-end;
   flex-basis: 100%;
   padding: 40px 108px 40px 45px;
+  border-radius: 15px;
+}
+
+.special-card-1 {
+  background-image: url("../img/special-card-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.special-card-2 {
+  background-image: url("../img/special-card-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .special-title {
   margin-bottom: 15px;
+  font-weight: 700;
+font-size: 40px;
+line-height: 40px;
+color: #FFFFFF;
 }
 
 .special-card-price {
   margin-bottom: 47px;
+  font-size: 20px;
+line-height: 20px;
+color: #FFFFFF;
+opacity: 0.8;
+}
+
+.special-card-links {
+  font-size: 16px;
+line-height: 16px;
+color: #F0BF5F;
+
 }
 
 .special-card-small {
@@ -172,6 +287,20 @@ body {
 .special-card-3 {
   max-width: 49%;
   min-height: 540px;
+  background-image: url("../img/special-card-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-special-title-big {
+  font-size: 60px;
+line-height: 60px;
+}
+
+.special-card-price-big {
+  font-size: 30px;
+line-height: 30px;
 }
 
 /*about us*/
@@ -190,6 +319,18 @@ body {
 .services-item {
   max-width: 48.9%;
   padding: 191px 126px 35px 45px;
+  border-radius: 15px;
+  background: #FFFFFF;
+
+}
+
+.services-item-1 {
+  background-image: url("../img/services-item-1.jpg");
+  
+}
+
+.services-item-all {
+  background-repeat: no-repeat;
 }
 
 .services-title {
