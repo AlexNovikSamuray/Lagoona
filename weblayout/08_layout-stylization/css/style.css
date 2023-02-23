@@ -20,8 +20,8 @@ img {
 @font-face {
   font-family: "Muller";
   src: local("Muller-Regular"),
-  url("../fonts/MullerRegular.woff2") format("woff2"),
-  url("../fonts/MullerRegular.woff") format("woff");
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -30,8 +30,8 @@ img {
 @font-face {
   font-family: "Muller";
   src: local("Muller-Light"),
-  url("../fonts/MullerLight.woff2") format("woff2"),
-  url("../fonts/MullerLight.woff") format("woff");
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -40,8 +40,8 @@ img {
 @font-face {
   font-family: "Muller";
   src: local("Muller-Medium"),
-  url("../fonts/MullerMedium.woff2") format("woff2"),
-  url("../fonts/MullerMedium.woff") format("woff");
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -50,8 +50,8 @@ img {
 @font-face {
   font-family: "Muller";
   src: local("Muller-Bold"),
-  url("../fonts/MullerBold.woff2") format("woff2"),
-  url("../fonts/MullerBold.woff") format("woff");
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -110,14 +110,18 @@ body {
   padding-left: 40px;
   font-weight: 400;
   font-size: 40px;
-line-height: 40px;
-color: #333333;
+  line-height: 40px;
+  color: #333333;
 }
 
 .general-descr {
   font-size: 16px;
-line-height: 200%;
-color: #000000;
+  line-height: 200%;
+  color: #000000;
+}
+
+.background-white {
+  background-color: #FFFFFF;
 }
 
 /* header */
@@ -141,10 +145,10 @@ color: #000000;
 
 .header-contacts {
   font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-color: #666666;
-font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+  font-style: normal;
 }
 
 .header-link {
@@ -152,8 +156,8 @@ font-style: normal;
   padding-left: 28px;
   font-weight: 500;
   font-size: 16px;
-line-height: 16px;
-color: #CC9933;
+  line-height: 16px;
+  color: #CC9933;
   background-image: url("../img/header-link-icon.svg");
   background-position: left center;
   background-repeat: no-repeat;
@@ -163,7 +167,6 @@ color: #CC9933;
 
 .header-bottom {
   padding: 14px 45px;
-  background-color: #FFFFFF;;
   border-radius: 15px;
 }
 
@@ -180,7 +183,7 @@ color: #CC9933;
   font-size: 16px;
   line-height: 16px;
   color: #666666;
-  
+
 }
 
 .header-item:not(:last-child) {
@@ -188,7 +191,7 @@ color: #CC9933;
 }
 
 .header-buttons {
-margin-left: auto;
+  margin-left: auto;
 }
 
 .header-button:not(:last-child) {
@@ -199,8 +202,8 @@ margin-left: auto;
   max-width: 179px;
   padding: 12px 20px;
   font-size: 16px;
-line-height: 16px;
-color: #CC9933;
+  line-height: 16px;
+  color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 15px;
 }
@@ -256,23 +259,23 @@ color: #CC9933;
 .special-title {
   margin-bottom: 15px;
   font-weight: 700;
-font-size: 40px;
-line-height: 40px;
-color: #FFFFFF;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
 }
 
 .special-card-price {
   margin-bottom: 47px;
   font-size: 20px;
-line-height: 20px;
-color: #FFFFFF;
-opacity: 0.8;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
 }
 
 .special-card-links {
   font-size: 16px;
-line-height: 16px;
-color: #F0BF5F;
+  line-height: 16px;
+  color: #F0BF5F;
 
 }
 
@@ -295,12 +298,12 @@ color: #F0BF5F;
 
 .section-special-title-big {
   font-size: 60px;
-line-height: 60px;
+  line-height: 60px;
 }
 
 .special-card-price-big {
   font-size: 30px;
-line-height: 30px;
+  line-height: 30px;
 }
 
 /*about us*/
@@ -320,21 +323,34 @@ line-height: 30px;
   max-width: 48.9%;
   padding: 191px 126px 35px 45px;
   border-radius: 15px;
-  background: #FFFFFF;
+  background-repeat: no-repeat;
+}
 
+.services-title-link {
+  padding-right: 22px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+  background-image: url("../img/services-link-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .services-item-1 {
   background-image: url("../img/services-item-1.jpg");
-  
 }
 
-.services-item-all {
-  background-repeat: no-repeat;
+.services-item-2 {
+  background-image: url("../img/services-item-2.jpg");
 }
 
-.services-title {
-  margin-bottom: 20px;
+.services-item-3 {
+  background-image: url("../img/services-item-3.jpg");
+}
+
+.services-item-4 {
+  background-image: url("../img/services-item-4.jpg");
 }
 
 /* advantages */
@@ -346,7 +362,45 @@ line-height: 30px;
 
 .advantages-item {
   max-width: 23.58%;
-  padding: 116px 42px 32px 45px;
+  padding: 40px 42px 32px 45px;
+  border-radius: 15px;
+}
+
+.advantages-card-descr {
+  padding-top: 76px;
+  background-repeat: no-repeat;
+}
+
+.advantages-card-descr-1 {
+  background-image: url("../img/advantages-icon-1.svg");
+}
+
+.advantages-card-descr-2 {
+  background-image: url("../img/advantages-icon-2.svg");
+}
+
+.advantages-card-descr-3 {
+  background-image: url("../img/advantages-icon-3.svg");
+}
+
+.advantages-card-descr-4 {
+  background-image: url("../img/advantages-icon-4.svg");
+}
+
+.advantages-card-descr-5 {
+  background-image: url("../img/advantages-icon-5.svg");
+}
+
+.advantages-card-descr-6 {
+  background-image: url("../img/advantages-icon-6.svg");
+}
+
+.advantages-card-descr-7 {
+  background-image: url("../img/advantages-icon-7.svg");
+}
+
+.advantages-card-descr-8 {
+  background-image: url("../img/advantages-icon-8.svg");
 }
 
 /* Hotels */
@@ -358,10 +412,17 @@ line-height: 30px;
 
 .hotels-item {
   max-width: 31.96%;
+  border-radius: 15px;
+  font-size: 0;
+}
+
+.photo-hotel {
+  border-radius: 15px 15px 0 0;
 }
 
 .hotel-item-block {
-  padding: 32px 45px 58px 45px;
+  padding: 32px 45px 45px;
+  border-radius: 0 0 15px 15px;
 }
 
 .hotel-rating {
@@ -370,23 +431,49 @@ line-height: 30px;
 
 .hotel-text-light {
   margin-right: 4px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+
 }
 
 .hotel-text-price {
   margin-right: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.hotel-text-medium {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
 }
 
 .hotel-name {
   padding-top: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
 }
 
 .hotel-location {
   padding-top: 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
 }
 
 .hotel-button {
   max-width: 100px;
-  padding-top: 33px;
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  color: #CC9933;
 }
 
 .hotels-item-last {
@@ -394,4 +481,19 @@ line-height: 30px;
   align-items: flex-end;
   flex-basis: 31.96%;
   padding-bottom: 27px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/hotels-item-last.jpg");
+}
+
+.hotel-link-text {
+  padding-right: 22px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+  background-image: url("../img/hotel-link-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+
 }
