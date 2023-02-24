@@ -140,7 +140,7 @@ body {
 }
 
 .header-address {
-  margin-right: auto;
+ margin-right: auto;
 }
 
 .header-contacts {
@@ -152,7 +152,6 @@ body {
 }
 
 .header-link {
-  margin-left: auto;
   padding-left: 28px;
   font-weight: 500;
   font-size: 16px;
@@ -168,6 +167,8 @@ body {
 .header-bottom {
   padding: 14px 45px;
   border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
@@ -190,16 +191,11 @@ body {
   margin-right: 45px;
 }
 
-.header-buttons {
-  margin-left: auto;
-}
-
 .header-button:not(:last-child) {
   margin-right: 80px;
 }
 
 .header-button {
-  max-width: 179px;
   padding: 12px 20px;
   font-size: 16px;
   line-height: 16px;
@@ -217,13 +213,7 @@ body {
   font-size: 0;
 }
 
-
-.section-special-title {
-  margin: 0;
-}
-
 .special-content {
-  padding-top: 20px;
   justify-content: space-between;
 }
 
@@ -425,6 +415,10 @@ body {
   border-radius: 0 0 15px 15px;
 }
 
+.hotel-price {
+  margin-bottom: 16px;
+}
+
 .hotel-rating {
   margin-left: auto;
 }
@@ -452,14 +446,13 @@ body {
 }
 
 .hotel-name {
-  padding-top: 16px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
 }
 
 .hotel-location {
-  padding-top: 16px;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 16px;
@@ -467,7 +460,6 @@ body {
 }
 
 .hotel-button {
-  max-width: 100px;
   padding: 12px 20px;
   font-size: 16px;
   line-height: 16px;
@@ -480,7 +472,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   flex-basis: 31.96%;
-  padding-bottom: 27px;
+  padding: 27px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/hotels-item-last.jpg");
