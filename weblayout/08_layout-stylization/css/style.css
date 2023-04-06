@@ -77,6 +77,14 @@ body {
   cursor: pointer;
 }
 
+.btn {
+  padding: 12px 19px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #CC9933;
+  color: #CC9933;
+}
+
 .flex {
   display: flex;
 }
@@ -196,11 +204,6 @@ body {
 }
 
 .header-button {
-  padding: 12px 20px;
-  font-size: 16px;
-  line-height: 16px;
-  color: #CC9933;
-  border: 1px solid #CC9933;
   border-radius: 15px;
 }
 
@@ -460,12 +463,7 @@ body {
 }
 
 .hotel-button {
-  padding: 12px 20px;
-  font-size: 16px;
-  line-height: 16px;
-  border: 1px solid #CC9933;
   border-radius: 10px;
-  color: #CC9933;
 }
 
 .hotels-item-last {
@@ -488,4 +486,79 @@ body {
   background-repeat: no-repeat;
   background-position: right center;
 
+}
+
+/* tour */
+
+.tour-block {
+  padding: 45px;
+  background: #E9E9E9;
+border-radius: 15px;
+color: #000000;
+}
+
+.section-title-tour {
+  padding: 0;
+
+
+}
+.form {
+  justify-content: space-between;
+  padding: 32px 28px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+
+.tour-text {
+  font-size: 12px;
+line-height: 12px;
+margin-bottom: 15px;
+}
+
+.tour-item {
+  flex-direction: column;
+  max-width: 169px;
+}
+
+.select-tour {
+  font-size: 16px;
+  line-height: 16px;
+  width: 169px;
+  appearance: none;
+  border: 0;
+}
+
+.select-tour-background {
+  background-image: url(../img/Rectangle\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+.tour-item:not(:last-child) {
+  margin-right: 41px;
+}
+
+.tour-item-small {
+  max-width: 121px;
+}
+
+.select-tour-small {
+width: 121px;
+}
+
+.select-tour-border {
+  border-bottom: 1px solid #E9E9E9;
+  ;
+}
+
+.button-form {
+  padding: 12px 29px;
+  border-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+opacity: 1;
 }

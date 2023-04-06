@@ -64,10 +64,10 @@
           </ul>
         </nav>
         <div class="flex header-buttons">
-          <button class="btn-reset header-button">
+          <button class="btn-reset btn header-button">
             Хочу тур
           </button>
-          <button class="btn-reset header-button">
+          <button class="btn-reset btn header-button">
             Обратный звонок
           </button>
         </div>
@@ -298,7 +298,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -355,7 +355,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -411,7 +411,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -467,7 +467,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -523,7 +523,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -579,7 +579,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -636,7 +636,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -692,7 +692,7 @@
                   Барселона, Испания
                 </div>
                 <div class="hotel-button-div">
-                  <button class="btn-reset hotel-button">
+                  <button class="btn-reset btn hotel-button">
                     Номера
                   </button>
                 </div>
@@ -705,6 +705,64 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="section tour">
+      <div class="container">
+        <div class="tour-block">
+        <h2 class="section-title section-title-tour">
+          Хочу тур
+        </h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+          <div class="form-left flex">
+            <label class="tour-item flex">
+              <span class="tour-text">Город вылета</span>
+              <select name="Город" class="select-tour select-tour-background">
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Москва">Москва</option>
+                <option value="Владимир">Владимир</option>
+                <option value="Смоленск">Смоленск</option>
+                <option value="Тверь">Тверь</option>
+              </select>
+            </label>
+            <label class="tour-item flex">
+              <span class="tour-text">
+                Страна
+              </span>
+              <select name="Страна" class="select-tour select-tour-background">
+                <option value="Испания">Испания</option>
+                <option value="Бразилия">Бразилия</option>
+                <option value="Канада">Канада</option>
+                <option value="Египет">Египет</option>
+                <option value="Индия">Индия</option>
+              </select>
+            </label>
+            <label class="tour-item tour-item-small flex">
+              <span class="tour-text">
+                Дата прибытия
+              </span>
+              <input type="date" name="Дата" value="2021-10-18" class="select-tour select-tour-small">
+            </label>
+            <label class="tour-item tour-item-small flex">
+              <span class="tour-text">
+                Ночей
+              </span>
+              <input type="number" name="Ночей" min="1" placeholder="6" class="select-tour select-tour-small select-tour-border">
+            </label>
+            <label class="tour-item tour-item-small flex">
+              <span class="tour-text">
+                Туристы
+              </span>
+              <input type="number" name="Туристы" min="1" required placeholder="2" class="select-tour select-tour-small select-tour-border">
+            </label>
+          </div>
+          <div class="form-right">
+            <button class="btn-reset btn button-form">
+              Найти
+            </button>
+          </div>
+        </form>
+      </div>
       </div>
     </section>
   </main>
